@@ -122,7 +122,6 @@ check('form_focus', 10, () => {
   if (focus.length === 0) return 'FAIL: add a :focus style for form controls';
   return true;
 });
-
 // ---------- Check 6 (15 pts): media query collapses grid ----------
 check('media_query', 15, () => {
   if (!ast) return 'FAIL: css/style.css missing or unparseable';
@@ -146,7 +145,6 @@ check('media_query', 15, () => {
   if (!found) return 'FAIL: @media (max-width: 700px) must collapse .card-grid to a single column';
   return true;
 });
-
 // ---------- Check 7 (5 pts): no !important, parses clean ----------
 check('css_hygiene', 5, () => {
   if (!ast) return 'FAIL: css/style.css missing or unparseable';
